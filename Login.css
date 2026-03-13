@@ -72,12 +72,13 @@ label {
 }
 
 .pass_forgotPass {
-  width: 300px;
+  width: 272px;
   height: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-a.pass_forgotPass {
+.pass_forgotPass,
+a {
   white-space: nowrap;
 }
