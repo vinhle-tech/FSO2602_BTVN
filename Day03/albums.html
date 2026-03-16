@@ -3,18 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -22,136 +10,70 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
     <link rel="stylesheet" href="../albums.css" />
     <title>Document</title>
   </head>
   <body>
-    <section class="Albums">
-      <div class="ten_albums">
-        <h1>Popular Collections</h1>
-        <div class="select">
-          <button class="cac_select" style="width: 70px">
-            <span class="text_select">Profile</span>
-          </button>
-          <button class="cac_select" style="width: 94px">
-            <span class="text_select">New York</span>
-          </button>
-          <button class="cac_select" style="width: 89px">
-            <span class="text_select">Relaxing</span>
-          </button>
-          <button class="cac_select" style="width: 75px">
-            <span class="text_select">Person</span>
-          </button>
-          <button class="cac_select" style="width: 83px">
-            <span class="text_select">Fashion</span>
-          </button>
+    <div class="albums">
+      <div class="name-albums">
+        <h1>Popular Collection</h1>
+        <div>
+          <button class="btn-1 btn-topics">Profile</button>
+          <button class="btn-2 btn-topics">New York</button>
+          <button class="btn-3 btn-topics">Relaxing</button>
+          <button class="btn-4 btn-topics">Person</button>
+          <button class="btn-5 btn-topics">Fashion</button>
         </div>
       </div>
-      <div class="img_group">
-        <div class="img img1">
-          <div class="img_group_nho">
-            <div>
-              <img
-                class="big_img"
-                src="../img_level1_task3/Rectangle 1.jpg"
-                alt="Anh"
-              />
-            </div>
-            <div class="img_nho">
-              <img
-                class="small_img"
-                src="../img_level1_task3/Rectangle 1.png"
-                alt="Anh"
-              />
-              <img
-                class="small_img"
-                src="../img_level1_task3/Rectangle 1.png"
-                alt="Anh"
-              />
-              <img
-                class="small_img"
-                src="../img_level1_task3/Rectangle 1.png"
-                alt="Anh"
-              />
-            </div>
+      <div class="img-group flex-center">
+        <div class="small-img-group">
+          <div class="img-big">
+            <img src="../img_level1_task3/Rectangle 1.jpg" alt="Anh" />
           </div>
-          <div class="icon_img">
-            <p>People</p>
-            <span class="icon icon1"
-              ><i class="fa-regular fa-file-image"></i>384
-            </span>
+          <div class="img-small">
+            <img src="../img_level1_task3/Rectangle 3.png" alt="Anh" />
+            <img src="../img_level1_task3/Rectangle 3.png" alt="Anh" />
+            <img src="../img_level1_task3/Rectangle 4.png" alt="Anh" />
+          </div>
+          <div class="topic-and-icon">
+            <p>People</p><span><i class="fa-regular fa-file-image"></i>155</span>
           </div>
         </div>
-        <div class="img img2">
-          <div class="img_group_nho">
-            <div>
-              <img
-                class="big_img"
-                src="../img_level1_task3/Rectangle 1.jpg"
-                alt="Anh"
-              />
-            </div>
-            <div class="img_nho">
-              <img
-                class="small_img"
-                src="../img_level1_task3/Rectangle 1.png"
-                alt="Anh"
-              />
-              <img
-                class="small_img"
-                src="../img_level1_task3/Rectangle 1.png"
-                alt="Anh"
-              />
-              <img
-                class="small_img"
-                src="../img_level1_task3/Rectangle 1.png"
-                alt="Anh"
-              />
-            </div>
+
+        <div class="small-img-group">
+          <div class="img-big">
+            <img src="../img_level1_task3/Rectangle 1.jpg" alt="Anh" />
           </div>
-          <div class="icon_img">
-            <p>Nature</p>
-            <span class="icon icon2"
-              ><i class="fa-regular fa-file-image"></i>255</span
-            >
+          <div class="img-small">
+            <img src="../img_level1_task3/Rectangle 3.png" alt="Anh" />
+            <img src="../img_level1_task3/Rectangle 3.png" alt="Anh" />
+            <img src="../img_level1_task3/Rectangle 4.png" alt="Anh" />
+          </div>
+          <div class="topic-and-icon">
+            <p>Nature</p><span><i class="fa-regular fa-file-image"></i>184</span>
           </div>
         </div>
-        <div class="img img3">
-          <div class="img_group_nho">
-            <div>
-              <img
-                class="big_img"
-                src="../img_level1_task3/Rectangle 1.jpg"
-                alt="Anh"
-              />
-            </div>
-            <div class="img_nho">
-              <img
-                class="small_img"
-                src="../img_level1_task3/Rectangle 1.png"
-                alt="Anh"
-              />
-              <img
-                class="small_img"
-                src="../img_level1_task3/Rectangle 1.png"
-                alt="Anh"
-              />
-              <img
-                class="small_img"
-                src="../img_level1_task3/Rectangle 1.png"
-                alt="Anh"
-              />
-            </div>
+
+        <div class="small-img-group">
+          <div class="img-big">
+            <img src="../img_level1_task3/Rectangle 1.jpg" alt="Anh" />
           </div>
-          <div class="icon_img">
-            <p>History</p>
-            <span class="icon icon3"
-              ><i class="fa-regular fa-file-image"></i> 144</span
-            >
+          <div class="img-small">
+            <img src="../img_level1_task3/Rectangle 3.png" alt="Anh" />
+            <img src="../img_level1_task3/Rectangle 3.png" alt="Anh" />
+            <img src="../img_level1_task3/Rectangle 4.png" alt="Anh" />
+          </div>
+          <div class="topic-and-icon">
+            <p>History</p><span><i class="fa-regular fa-file-image"></i>356</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>
-

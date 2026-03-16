@@ -7,28 +7,31 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="Login_group">
-      <div class="Login">
-        <h2>Login</h2>
+    <h1>Login</h1>
+
+    <form action="">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="" id="" placeholder="example@email.com" />
       </div>
 
-      <form action="">
-        <div class="email">
-          <label for="email">Email</label>
-          <input class="input" type="email" placeholder="example@gmail.com" />
-        </div>
-        <div class="password">
-          <div class="pass_forgotPass">
-            <label for="password">Password</label>
-            <a style="width: 113px;height: 16px; color: #007aff; text-decoration: none;font-size: 14px;" href="../index.html">Forgot password?</a>
-          </div>
-          <input class="input" type="password" placeholder="Your password" />
-        </div>
+      <div class="form-group">
+        <label class="flex-between" for="password">
+          <span>Passwork</span>
+          <a href="../index.html">Forgot passwork?</a>
+        </label>
+        <input type="password" placeholder="*********" />
+      </div>
+
+      <div class="form-group">
         <button>Login</button>
-        <p style="width: 272px; height: 16px; font-size: 14px;">
-          Don't have account? <a style=" color: #007aff; text-decoration: none;" href="../index.html">Create new account</a>
+      </div>
+
+      <div class="create-acccount">
+        <p>
+          Don't have account? <a href="../index.html">Create new account</a>
         </p>
-      </form>
-    </div>
+      </div>
+    </form>
   </body>
 </html>
