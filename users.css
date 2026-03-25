@@ -1,0 +1,13 @@
+
+html{
+    font-family: 'Poppins',sans-serif;
+}
+
+h1{
+    font-family: 'Merriweather',serif;
+}
+
+.user-skills{
+    gap: 10px;
+    width: 100px;
+}
