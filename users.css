@@ -1,13 +1,122 @@
-
-html{
-    font-family: 'Poppins',sans-serif;
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
 }
 
-h1{
-    font-family: 'Merriweather',serif;
+body {
+  background-color: #bfc8e6;
 }
 
-.user-skills{
-    gap: 10px;
-    width: 100px;
+.users-page {
+  gap: 7rem;
+  width: 100%;
+  max-width: 121.3rem;
+  padding: 10rem;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 1.6rem;
+}
+
+.users-header {
+  width: 100%;
+  max-width: 101.3rem;
+
+  h1 {
+    font-family: "Merriweather", serif;
+    margin-bottom: 2.4rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #151b32;
+  }
+
+  .search-bar {
+    position: relative;
+
+    input {
+      width: 100%;
+      width: 32.7rem;
+      height: 6.4rem;
+      border: 1px solid #bfc8e6;
+      border-radius: 0.4rem;
+      padding : 1.6rem 1.6rem 1.6rem 4.8rem;
+      font-weight: 500;
+      opacity: 0.7;
+    }
+
+    i {
+      position: absolute;
+      left: 1.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+    }
+  }
+
+  .users-filter {
+    button {
+      padding: 1.6rem;
+      border-width: 0;
+      border-radius: 0.8rem;
+      background-color: #fff;
+      cursor: pointer;
+      font-size: 1.6rem;
+      color: #151b32;
+
+      &:hover {
+        background-color: #849fff;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.users-grid {
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.user {
+  width: 100%;
+  max-width: 32.7rem;
+  height: 20.8rem;
+  background-color: #fbfcff;
+  border-radius: 1.6rem;
+  padding: 2.4rem;
+  gap: 16px;
+  border: 1px solid #fbfcff;
+  cursor: pointer;
+
+  img {
+    width: 9.7rem;
+  }
+
+  &:hover {
+    border: 1px solid #849fff;
+  }
+}
+
+.user-info {
+  .user-address p:first-child {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+    margin-top: 2rem;
+  }
+
+  .user-address p:last-child {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+  }
+
+  .user-skills p {
+    height: 2.2rem;
+    padding: 0.2rem 0.8rem;
+    border: 1px solid #bfc8e5;
+    border-radius: 1rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    text-align: center;
+    color: #516fd4;
+  }
 }

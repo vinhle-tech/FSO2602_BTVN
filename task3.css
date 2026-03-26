@@ -14,6 +14,7 @@ body {
   border: 1.5rem solid #fff;
   border-radius: 25px;
   padding: 4rem;
+  margin: 0 auto;
 }
 .selection {
   width: 100%;
@@ -24,6 +25,7 @@ body {
 
 .mega-menu {
   position: relative;
+  
 
   &:hover .small-menu {
     display: flex;
@@ -45,6 +47,7 @@ body {
 
   ul,
   li {
+    cursor: pointer;
     span {
       font-size: 1.5rem;
       font-weight: 700;
@@ -71,6 +74,8 @@ body {
 
   border-width: 0px;
   border-radius: 1.5rem;
+
+  cursor: pointer;
   &:hover {
     background-color: #dde1f9;
   }
@@ -80,6 +85,7 @@ body {
   justify-content: flex-end;
 
   .btn-log-in {
+    cursor: pointer;
     background-color: #f9f9ff;
     color: #0f0f34;
     &:hover {
@@ -88,6 +94,7 @@ body {
   }
 
   .btn-sign-up {
+    cursor: pointer;
     background-color: #0f0f34;
     color: #fff;
     &:hover {

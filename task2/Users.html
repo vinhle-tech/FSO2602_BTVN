@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Users</title>
+    <!-- Icon font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,15 +23,17 @@
       rel="stylesheet"
     />
 
-    <!-- ===== CSS FILES ===== -->
+    <!-- Reset CSS -->
     <link rel="stylesheet" href="../border-box-reset.css" />
-    <link rel="stylesheet" href="../display-flex.css">
+
+    <!-- ===== CSS FILES ===== -->
+    <link rel="stylesheet" href="../display-flex.css" />
     <link rel="stylesheet" href="../users.css" />
   </head>
 
   <body>
     <!-- ===== USERS PAGE ===== -->
-    <section class="users-page">
+    <section class="users-page flex-collumn-center">
       <!-- ===== USERS HEADER ===== -->
       <div class="users-header">
         <!-- Page title -->
@@ -32,6 +43,7 @@
         <div class="users-controls flex-between">
           <!-- Search bar -->
           <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
             <input type="search" placeholder="Search users" />
           </div>
 
@@ -47,102 +59,114 @@
       </div>
 
       <!-- ===== USERS GRID ===== -->
-      <div class="users-grid">
+      <div class="users-grid flex-center">
         <!-- ===== USER CARD ===== -->
-        <div class="user">
+        <div class="user flex-start">
           <img src="../user.img/Ellipse 1.png" alt="User avatar" />
 
-          <div class="user-address">
-            <p>Lelah Nichols</p>
-            <p>Troy, MI</p>
-          </div>
+          <div class="user-info">
+            <div class="user-address">
+              <p>Lelah Nichols</p>
+              <p>Troy, MI</p>
+            </div>
 
-          <!-- User skills -->
-          <div class="user-skills flex-center-wrap">
-            <p>clothes</p>
-            <p>stem</p>
+            <!-- User skills -->
+            <div class="user-skills flex-center-wrap">
+              <p>clothes</p>
+              <p>stem</p>
+            </div>
           </div>
         </div>
 
         <!-- ===== USER CARD ===== -->
-        <div class="user">
+        <div class="user flex-start">
           <img src="../user.img/Ellipse 2.png" alt="User avatar" />
 
-          <div class="user-address">
-            <p>Jesus Weiss</p>
-            <p>Fort Worth, TX</p>
-          </div>
+          <div class="user-info">
+            <div class="user-address">
+              <p>Jesus Weiss</p>
+              <p>Fort Worth, TX</p>
+            </div>
 
-          <div class="user-skills flex-center-wrap">
-            <p>headset</p>
-            <p>gadget</p>
-            <p>speed</p>
-            <p>winter</p>
+            <div class="user-skills flex-center-wrap">
+              <p>headset</p>
+              <p>gadget</p>
+              <p>speed</p>
+              <p>winter</p>
+            </div>
           </div>
         </div>
 
         <!-- ===== USER CARD ===== -->
-        <div class="user">
+        <div class="user flex-start">
           <img src="../user.img/Ellipse 3.png" alt="User avatar" />
 
-          <div class="user-address">
-            <p>Annie Rice</p>
-            <p>Austin, TX</p>
-          </div>
+          <div class="user-info">
+            <div class="user-address">
+              <p>Annie Rice</p>
+              <p>Austin, TX</p>
+            </div>
 
-          <div class="user-skills flex-center-wrap">
-            <p>road</p>
-            <p>mountain</p>
-            <p>trip</p>
-            <p>earth</p>
-            <p>nature</p>
+            <div class="user-skills flex-center-wrap">
+              <p>road</p>
+              <p>mountain</p>
+              <p>trip</p>
+              <p>earth</p>
+              <p>nature</p>
+            </div>
           </div>
         </div>
 
         <!-- ===== USER CARD ===== -->
-        <div class="user">
+        <div class="user flex-start">
           <img src="../user.img/Ellipse 4.png" alt="User avatar" />
 
-          <div class="user-address">
-            <p>Robert Brower</p>
-            <p>Cincinnati, OH</p>
-          </div>
+          <div class="user-info">
+            <div class="user-address">
+              <p>Robert Brower</p>
+              <p>Cincinnati, OH</p>
+            </div>
 
-          <div class="user-skills flex-center-wrap">
-            <p>Maintenance</p>
-            <p>gears</p>
-            <p>frames</p>
-            <p>repair</p>
+            <div class="user-skills flex-center-wrap">
+              <p>Maintenance</p>
+              <p>gears</p>
+              <p>frames</p>
+              <p>repair</p>
+            </div>
           </div>
         </div>
 
         <!-- ===== USER CARD ===== -->
-        <div class="user">
+        <div class="user flex-start">
           <img src="../user.img/Ellipse 5.png" alt="User avatar" />
 
-          <div class="user-address">
-            <p>Amy Campbell</p>
-            <p>Warrior, AL</p>
-          </div>
+          <div class="user-info">
+            <div class="user-address">
+              <p>Amy Campbell</p>
+              <p>Warrior, AL</p>
+            </div>
 
-          <div class="user-skills flex-center-wrap">
-            <p>music</p>
-            <p>disks</p>
+            <div class="user-skills flex-center-wrap">
+              <p>music</p>
+              <p>disks</p>
+            </div>
           </div>
         </div>
 
         <!-- ===== USER CARD ===== -->
-        <div class="user">
+        <div class="user flex-start">
           <img src="../user.img/Ellipse 6.png" alt="User avatar" />
 
-          <div class="user-address">
-            <p>Anthony S. Morin</p>
-            <p>Lyndhurst, NJ</p>
-          </div>
+          <div class="user-info">
+            <div class="user-address">
+              <p>Anthony S. Morin</p>
+              <p>Lyndhurst, NJ</p>
+            </div>
 
-          <div class="user-skills flex-center-wrap">
-            <p>vintage</p>
-            <p>electric</p>
+            <div class="user-skills flex-center-wrap">
+              <p>vintage</p>
+              <p>electric</p>
+            </div>
           </div>
         </div>
       </div>
