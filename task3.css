@@ -1,25 +1,105 @@
-/* Reset css */
-ul,li{
-    list-style: none;
-}
-
 html {
   font-family: "Mulish", sans-serif;
-  font-size: 16px;
+  font-size: 10px;
 }
 
-body{
-   background-color: #f9f9ff;
+body {
+  background-color: #f9f9ff;
 }
 
 .container {
-    width: 100%;
-    max-width: 1255px;
-    background-color: #f9f9ff;
-    border: 15px solid #fff;
-    border-radius: 25px;
+  width: 100%;
+  max-width: 122.5rem;
+  background-color: #f9f9ff;
+  border: 1.5rem solid #fff;
+  border-radius: 25px;
+  padding: 4rem;
+}
+.selection {
+  width: 100%;
+  max-width: 55.7rem;
+  height: 6rem;
+  justify-content: flex-start;
+}
+
+.mega-menu {
+  position: relative;
+
+  &:hover .small-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
+.small-menu {
+  display: none;
+  position: absolute;
+
+  width: 38.9rem;
+  background-color: #fff;
+  left: -1rem;
+  z-index: 1000;
+  border-radius: 1.5rem;
+
+  ul,
+  li {
+    span {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    padding: 1.25rem;
+    font-size: 1.4rem;
+    list-style: none;
+  }
+
+  li {
+    border-radius: 0.5rem;
+    &:hover {
+      background-color: #f8f9ff;
+    }
+  }
+}
+
+.btn-selection {
+  padding: 2rem 2.5rem;
+  background-color: #f9f9ff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #0f0f34;
+
+  border-width: 0px;
+  border-radius: 1.5rem;
+  &:hover {
+    background-color: #dde1f9;
+  }
 }
 
 .log-in-and-sign-up {
-  align-self: start;
+  justify-content: flex-end;
+
+  .btn-log-in {
+    background-color: #f9f9ff;
+    color: #0f0f34;
+    &:hover {
+      background-color: #dde1f9;
+    }
+  }
+
+  .btn-sign-up {
+    background-color: #0f0f34;
+    color: #fff;
+    &:hover {
+      background-color: #0f0f3488;
+    }
+  }
+}
+
+.btn-action {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 2rem 2.5rem;
+  border-width: 0;
+  border-radius: 0.5rem;
 }
