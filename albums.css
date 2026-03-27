@@ -23,18 +23,19 @@ html {
 }
 
 .albums {
-  width: 1563px;
+  width: 100%;
+  max-width: 1563px;
   padding: 62px;
   background-color: #eff0f188;
   margin: auto;
-  margin-top: 20vh;
+  margin-top: 30px;
   border-radius: 26px;
   box-shadow: 16px 18px 10px #efefef;
 }
 
 .name-albums {
-  width: 443px;
-  height: 108px;
+  width: 100%;
+  max-width: 443px;
   margin-bottom: 56px;
   margin-left: -8px;
   .btn-topics {
@@ -55,11 +56,14 @@ html {
 }
 
 .img-group {
-  width: 1439px;
+  width: 100%;
+  max-width: 1439px;
   gap: 64px;
+  flex-wrap: wrap;
 
   .small-img-group {
-    width: 437px;
+    width: 100%;
+    max-width: 437px;
     border-radius: 32px;
     padding: 24px;
     gap: 24px;
@@ -67,8 +71,9 @@ html {
   }
 
   .img-big {
-    width: 389px;
-    height: 268px;
+    width: 100%;
+    max-width: ;width: 389px;
+    max-height: 268px;
     margin-bottom: 15px;
   }
   .img-small {
