@@ -1,0 +1,126 @@
+:root {
+  --color-font: #1e2246;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: #f3f6ff;
+}
+
+.container {
+  width: 100%;
+  max-width: 105.4rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--color-font);
+  margin-bottom: 7.2rem;
+}
+
+.table-options {
+  gap: 3.2rem;
+
+  .option {
+    width: 33rem;
+    height: 25.1rem;
+    background-color: #fff;
+    padding: 4.8rem 4rem;
+    border-width: 0;
+    border-radius: 1.6rem;
+    box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.05),
+      0 8px 20px rgba(0, 0, 0, 0.06);
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3.2rem;
+      
+      p {
+        display: inline-block;
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: var(--color-font);
+      }
+
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.4rem;
+        width: 6.4rem;
+        height: 6.4rem;
+        padding: 1.6rem;
+        background-color: red;
+        margin-right: 1.4rem;
+        border-radius: 1.4rem;
+        border-width: 0;
+      }
+    }
+    button {
+      font-size: 1.8rem;
+      font-weight: 300;
+      width: 25rem;
+      height: 5.9rem;
+      padding: 1.6rem 2.4rem;
+      border: 1px solid #c2c5e2;
+      border-radius: 0.8rem;
+      background-color: #fff;
+      color: var(--color-font);
+
+      cursor: pointer;
+      &:hover {
+        background-color: var(--color-font);
+        color: #fff;
+      }
+    }
+  }
+
+  .option1 {
+    i {
+      background: linear-gradient(135deg, #bbcbfb, #f1d4ff);
+    }
+  }
+  .option2 {
+    i {
+      background: linear-gradient(135deg, #fbbbda, #ffd4d4);
+    }
+  }
+  .option3 {
+    i {
+      background: linear-gradient(135deg, #bbebfb, #efd4ff);
+    }
+  }
+  .option4 {
+    i {
+      background: linear-gradient(135deg, #bbfbe4, #d4e0ff);
+    }
+  }
+  .option5 {
+    i {
+      background: linear-gradient(135deg, #bbd8fb, #ffd4d4);
+    }
+  }
+  .option6 {
+    i {
+      background: linear-gradient(135deg, #ffdec7, #d4d9ff);
+    }
+  }
+}
+
+.para {
+  width: 84.5rem;
+  text-align: center;
+  margin-top: 6.4rem;
+  font-size: 1.6rem;
+  color: var(--color-font);
+  opacity: 0.7;
+}
