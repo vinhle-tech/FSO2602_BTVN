@@ -10,6 +10,11 @@ html {
 
 body {
   background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
 }
 
 .container {
@@ -21,7 +26,6 @@ body {
   margin: 0 auto;
   box-shadow: 0 20px 40px rgba(40, 26, 81, 0.1);
 }
-
 .header {
   flex-wrap: wrap;
   gap: 12px;
@@ -114,4 +118,15 @@ body {
 }
 .content8 {
   background-color: #ffd9c9;
+}
+
+.back-ground-container {
+  position: absolute;
+  width: 421px;
+  height: 613px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+  border-radius: 31px;
+  background-color: #efebfd;
 }
