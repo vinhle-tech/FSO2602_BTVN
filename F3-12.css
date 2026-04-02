@@ -1,0 +1,248 @@
+:root {
+  --primary-color: #1f1d2a;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  color: var(--primary-color);
+}
+
+body {
+  background: linear-gradient(292.92deg, #e6e6e4 7.23%, #f0e8e2 97.74%);
+}
+
+button {
+  font-family: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 151.2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 12rem;
+}
+
+.header {
+  width: 100%;
+  max-width: 127.2rem;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+
+  h1 {
+    font-weight: 400;
+    font-size: 3.2rem;
+  }
+
+  .nav-bar {
+    display: flex;
+    gap: 5.2rem;
+    width: 100%;
+    max-width: 44.25rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        border-bottom: 2px solid var(--primary-color);
+      }
+    }
+  }
+
+  .btn-sign-in {
+    width: 100%;
+    max-width: 11rem;
+    height: 4.5rem;
+    border-radius: 0.6rem;
+    border-width: 1px;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.6rem;
+    border: 1px solid #1f1d2a;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #96c67f;
+      border: 1px solid transparent;
+    }
+  }
+}
+
+.hero {
+  width: 100%;
+  max-width: 120rem;
+  min-height: 53.1rem;
+  gap: 8.1rem;
+  margin: 0 19.2rem 10rem 12rem;
+  .text {
+    h2:nth-child(2) {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 5.5rem;
+    }
+
+    p {
+      max-width: 53.1rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: #9b948e;
+    }
+
+    button {
+      margin-top: 5rem;
+      width: 17rem;
+      height: 7rem;
+      border-radius: 0.6rem;
+      background-color: #96c67f;
+      font-weight: 400;
+      font-size: 2rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(292.92deg, #e6e6e4 7.23%, #f0e8e2 97.74%);
+        border: 1px solid #96c67f;
+      }
+    }
+  }
+
+  .hero-img {
+    position: relative;
+    width: 50rem;
+    height: 50rem;
+
+    .img-expert {
+      width: 50rem;
+      height: 50rem;
+      border-radius: 50%;
+    }
+
+    img[alt="btn-next-content"] {
+      position: absolute;
+      width: 8rem;
+      right: -4rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .evaluate {
+      position: absolute;
+      width: 18rem;
+      padding: 2rem;
+      border-radius: 2rem;
+      background-color: #fff;
+      bottom: -3.1rem;
+      left: 3rem;
+
+      .name-expert {
+        font-weight: 400;
+        font-size: 1.6rem;
+      }
+
+      p:nth-child(2) {
+        font-weight: 400;
+        font-size: 1.4rem;
+        color: #9b948e;
+        margin-bottom: 1.9rem;
+      }
+
+      .scale img {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+  }
+}
+
+.logo-company {
+  width: 76.3rem;
+  margin-bottom: 10rem;
+  p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .logos {
+    gap: 6rem;
+
+    .logo {
+      img {
+        height: 3rem;
+      }
+    }
+  }
+}
+
+.Grow-today {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.grid-teacher {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.1rem;
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  .teacher {
+    border-radius: 2.4rem;
+    width: 29.5rem;
+    background-color: #fff;
+    margin-bottom: 10rem;
+    img {
+      width: 29.5rem;
+      border-radius: 2.4rem 2.4rem 0 0;
+    }
+
+    .info-teacher {
+      width: 29.5rem;
+      padding: 2rem;
+
+      .name-teacher {
+        font-weight: 500;
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+      }
+
+      p:nth-child(2) {
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #9b948e;
+      }
+    }
+  }
+}
+
+.background {
+  background-image: url("/F3-12/img-F3-12/background.svg");
+  background-repeat: no-repeat;
+  max-width: 112.9rem;
+  width: 100%;
+  margin: 0 auto;
+}
