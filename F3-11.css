@@ -38,6 +38,7 @@ a {
   }
 
   .nav-bar {
+    width: 100%;
     max-width: 71.3rem;
     gap: 3.2rem;
     font-weight: 700;
