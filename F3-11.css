@@ -29,6 +29,7 @@ a {
 }
 
 .header {
+  width: 100%;
   position: sticky;
   top: 0;
   background-color: #fff;
