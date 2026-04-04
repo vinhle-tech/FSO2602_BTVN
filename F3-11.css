@@ -28,7 +28,9 @@ a {
 }
 
 .header {
-  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
   .Logo {
     max-width: 24rem;
     margin-bottom: 3.2rem;
