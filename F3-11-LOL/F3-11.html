@@ -4,120 +4,244 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- Reset CSS -->
-    <link rel="stylesheet" href="../border-box-reset.css" />
+    <link rel="stylesheet" href="./F3-11.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../F3-11.css" />
-    <link rel="stylesheet" href="../display-flex.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography,forms,aspect-ratio"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#281A51",
+            },
+            spacing: {
+              128: "32rem",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- SỬA Ở ĐÂY -->
+    <style type="text/tailwindcss">
+      @layer base {
+        h1 {
+          @apply text-2xl font-bold;
+        }
+
+        table {
+          @apply border-collapse;
+        }
+      }
+
+      @layer components {
+        .btn {
+          @apply px-4 py-2 bg-blue-700 border-2 border-red-700 text-white font-bold rounded-md transition-all;
+        }
+
+        .name-champion {
+          @apply w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px];
+        }
+      }
+
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <link rel="stylesheet" href="./F3-11.css" />
   </head>
+
   <body>
-    <div class="container">
-      <img src="./img-F3-11/Sona.jpg" alt="Img LOL" class="Sona" />
-      <div class="header flex-collumn-center">
-        <img src="./img-F3-11/Logo-lol.png" alt="Logo LOL" class="Logo" />
-        <div class="nav-bar flex-between">
-          <a href="">Game</a>
-          <a href="">Champions</a>
-          <a href="">News</a>
-          <a href="">Patch Notes</a>
-          <a href="">Discover</a>
-          <a href="">Exports</a>
-          <a href="">Universe</a>
-        </div>
-      </div>
-      <div class="grid-champion">
+    <section>
+      <img class="mx-auto w-max" src="./img-F3-11/Sona.jpg" alt="" />
+    </section>
+
+    <div class="header sticky top-0 w-100% bg-white">
+      <img class="my-8 w-60 mx-auto" src="./img-F3-11/Logo-lol.png" alt="" />
+
+      <ul
+        class="flex justify-between gap-8 w-[713px] mx-auto text-[20px] mb-16 capitalize text-nowrap"
+      >
+        <li><a href="/game">game</a></li>
+        <li><a href="/champions">champions</a></li>
+        <li><a href="/news">news</a></li>
+        <li><a href="/patch-notes">patch notes</a></li>
+        <li><a href="/discover">discover</a></li>
+        <li><a href="/exports">exports</a></li>
+        <li><a href="/universe">universe</a></li>
+      </ul>
+    </div>
+
+    <div class="cards grid grid-cols-4 mx-auto max-w-[1440px]">
+      <div class="card mb-8 w-[328px]">
         <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Ahri.jpg" alt="Ahri" class="champion" />
-            <p class="name-champion">Ahri</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Akali.png" alt="Akali" class="champion" />
-            <p class="name-champion">Akali</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Arzi.png" alt="Arzi" class="champion" />
-            <p class="name-champion">Arzi</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Caitlyn.png" alt="Caitlyn" class="champion" />
-            <p class="name-champion">Caitlyn</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Darius.png" alt="Darius" class="champion" />
-            <p class="name-champion">Darius</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Fizz.png" alt="Fizz" class="champion" />
-            <p class="name-champion">Fizz</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Irelia.png" alt="Irelia" class="champion" />
-            <p class="name-champion">Irelia</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Jnix.png" alt="Jnix" class="champion" />
-            <p class="name-champion">Jnix</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Rengar.png" alt="Rengar" class="champion" />
-            <p class="name-champion">Rengar</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img
-              src="./img-F3-11/Seraphine.png"
-              alt="Seraphine"
-              class="champion"
-            />
-            <p class="name-champion">Seraphine</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Yasuo.png" alt="Yasuo" class="champion" />
-            <p class="name-champion">Yasuo</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="frame-champion">
-            <img src="./img-F3-11/Wukong.png" alt="Wukong" class="champion" />
-            <p class="name-champion">Wukong</p>
-          </div>
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
         </a>
       </div>
-      <a href="https://www.youtube.com/watch?v=YAgJ9XugGBo" target="_blank">
-        <img
-          src="./img-F3-11/Xayda&Rakan.png"
-          alt="Xayda and Rakan"
-          class="Xayda-and-Rakan"
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p class="name-champion">AHRI</p>
+        </a>
+      </div>
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
+        </a>
+      </div>
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
+        </a>
+      </div>
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
+        </a>
+      </div>
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
+        </a>
+      </div>
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
+        </a>
+      </div>
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
+        </a>
+      </div>
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
+        </a>
+      </div>
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
+        </a>
+      </div>
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
+        </a>
+      </div>
+
+      <div class="card mb-8 w-[328px]">
+        <a href="">
+          <img class="w-[328px]" src="./img-F3-11/Ahri.jpg" alt="" />
+          <p
+            class="w-[328px] p-7 bg-[#0E4C67] text-white text-center text-[20px]"
+          >
+            AHRI
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <iframe
+      class="w-[1440px] h-[792px] mb-[72px]"
+      src="https://www.youtube.com/embed/O4PDzBnBMU4?si=tg8QhxD-0uDd5vRP"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <div
+      class="footer flex justify-between w-[1440px] py-6 pr-6 bg-[#0E4C67] text-white"
+    >
+      <p class="self-center">© 2021 All Rights Reserved</p>
+
+      <form action="" class="flex">
+        <input
+          class="px-[26px] w-[280px] mr-6 border-2 border-[#FFA800]"
+          type="email"
+          placeholder="Email Address"
         />
-      </a>
-      <div class="footer flex-between">
-        <p>© 2021 All Rights Reserved</p>
-        <div class="Play-for-free flex-between">
-          <input type="email" placeholder="Email Address" />
-          <button>Play For Free</button>
-        </div>
-      </div>
+        <button class="w-[120px] bg-[#FFA800] rounded-[5px]">
+          Play For Free
+        </button>
+      </form>
     </div>
   </body>
 </html>

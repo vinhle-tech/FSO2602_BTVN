@@ -1,0 +1,13 @@
+@media screen and (max-width : 768px){
+    .header ul{
+        display: grid;
+        grid-template-columns: 1;
+        justify-content: center;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 32px;
+    }
+}
